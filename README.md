@@ -40,8 +40,8 @@ The configuration details of each machine may be found below.
 | ELK          | Monitoring    | 10.1.0.4     | Linux             |
 
 Azure has provisioned a load balancer in front of all machines except for the jump box. The load balancer's targets are partitioned into the following availability zones:
-Availability Zone #1: Web 1 + Web 2
-Availability Zone #2: ELK
+- Availability Zone #1: Web 1 + Web 2
+- Availability Zone #2: ELK
 
 ### Access Policies
 
@@ -77,16 +77,16 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
--10.0.0.5
--10.0.0.6
+- 10.0.0.5
+- 10.0.0.6
 
 We have installed the following Beats on these machines:
--Metricbeat and Filebeat
+- Metricbeat and Filebeat
 
 
 These Beats allow us to collect the following information from each machine:
--Metricbeat: collects information related to system metrics, including CPU usage, and services running on the machine.
--Filebeat: monitors changes to the filesystem, specifically apache logs, and forwards them to Elasticsearch or Logstash for analysis.
+- Metricbeat: collects information related to system metrics, including CPU usage, and services running on the machine.
+- Filebeat: monitors changes to the filesystem, specifically apache logs, and forwards them to Elasticsearch or Logstash for analysis.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
