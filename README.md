@@ -48,7 +48,7 @@ Azure has provisioned a load balancer in front of all machines except for the ju
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 50.38.44.55 (Current Public IP Address)
+- (Current Public IP Address)
 
 Machines within the network can only be accessed by each other.
 - Jump box has access to the ELK VM, and the IP address is 10.0.0.4.
@@ -57,7 +57,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 50.38.44.55          |
+| Jump Box | Yes                 | current IP address   |
 | ELK      | No                  | 10.0.0.0/16          |
 | Web 1    | No                  | 10.0.0.0/16          |
 | Web 2    | No                  | 10.0.0.0/16          |
